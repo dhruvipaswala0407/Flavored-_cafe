@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-img{width:100%;}
 
-body::before{
+img {
+    width: 100%;
+}
+
+body::before {
     content: "";
     position: fixed;
     top: 0;
@@ -22,25 +25,28 @@ body::before{
     transform: scale(1.05);
     filter: blur(15px);
 }
+
 .container {
-    background:  #e2dcd29f;
+    background: #e2dcd29f;
     width: 100%;
     width: 1200px;
-    height: 70vh;
+    height: auto;
     border-radius: 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     padding: 3rem 4rem;
     position: relative;
     overflow: hidden;
-    margin:0 auto;
-    margin-top:40px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
 }
+
 .logo-area h1 {
     color: #2a0a0a;
     font-size: 1.5rem;
@@ -48,18 +54,21 @@ header {
     align-items: center;
     gap: 5px;
 }
+
 .logo-area p {
-    color:#300e0e;
+    color: #300e0e;
     font-size: 0.8rem;
     margin-top: 2px;
 }
+
 .nav {
     display: flex;
     gap: 2.5rem;
 }
+
 .nav a {
     text-decoration: none;
-    color:  #2a0a0a;
+    color: #2a0a0a;
     font-size: 1rem;
     font-weight: 500;
     position: relative;
@@ -71,7 +80,7 @@ header {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #291911;;
+    background-color: #291911;
 }
 .nav-btn {
     background-color: #291911;
@@ -99,7 +108,7 @@ main {
     margin-bottom: 2rem;
 }
 .cta-btn {
-    background-color:#291911;
+    background-color: #291911;
     color: white;
     border: none;
     padding: 1rem 3rem;
@@ -109,7 +118,7 @@ main {
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(42, 10, 10, 0.2);
     margin-bottom: 3rem;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
 }
 .cta-btn:hover {
     transform: translateY(-2px);
@@ -134,10 +143,188 @@ main {
 .icon-box:hover {
     background-color: #887e6c;
 }
-.hero-image img{
+.hero-image img {
     width: 450px;
     height: 450px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 5px 8px 0.5px rgba(0, 0, 0, 0.15);
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1000px;
+    width: 100%;
+}
+.cards-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+.coffee-card {
+    background: rgba(250, 245, 240, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    width: 220px;
+    padding: 80px 20px 40px;
+    position: relative;
+    text-align: left;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+.coffee-card img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.coffee-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.coffee-card p {
+    font-size: 0.75rem;
+    color: #665c55;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    height: 40px;
+}
+.card-actions {
+    display: flex;
+    gap: 10px;
+}
+.icon-btn {
+    background: transparent;
+    border: 1px solid #d5cbbd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #332822;
+    transition: all 0.2s;
+}
+.icon-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+.price-tag {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2a0a0a;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(42, 10, 10, 0.3);
+}
+.text-content {
+    width: 300px;
+    width: 400px;
+}
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: #2a0a0a;
+}
+.text-content p {
+    font-size: 0.85rem;
+    color: #554a43;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+.btn-primary {
+    background: linear-gradient(90deg, #4a1d0f 0%, #8c4c2a 100%);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(74, 29, 15, 0.2);
+    transition: opacity 0.3s;
+}
+.btn-primary:hover {
+    opacity: 0.9;
+}
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 90%;
+    gap: 40px;
+}
+.text-content {
+    flex: 1;
+    max-width: 480px;
+}
+
+.text-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #311c10;
+}
+.text-content p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #4a3b32;
+    margin-bottom: 30px;
+}
+.learn-more-btn {
+    background: linear-gradient(to right, #381a0b, #935a34);
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px; 
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+.image-content {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coffee-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.price-tag {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: rgba(250, 240, 230, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
